@@ -1,0 +1,102 @@
+:root {
+    --mainColor: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    font-family: sans-serif;
+    padding-block: 20px;
+}
+.score {
+    color: var(--mainColor);
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.score h2 {
+    font-size: 1.875rem;
+}
+.score p {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+
+.intro {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 5s ease;
+}
+.intro h1 {
+    font-size: 3rem;
+    color: var(--mainColor);
+    text-shadow: 1px 1px 2px red, 0 0 1em blue;
+}
+.intro button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    color: var(--mainColor);
+    font-size: 16px;
+    background: none;
+    border: 2px solid #a1c4fd;
+    box-shadow: 3px 3px #666, -3px -3px red;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+.btn {
+    background: none;
+    border:none;
+    transition: transform .3s;
+}
+button:hover {
+    transform: scale(1.1);
+}
+
+.match {
+    flex-direction: column;
+    transition: all 3s ease .5s;
+}
+.result {
+    font-size: 3rem;
+    color: var(--mainColor);
+    text-align: center;
+}
+.hands {
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+}
+.player-hand {
+    transform: rotateY(180deg);
+}
+
+div.fadeOut {
+    display: none;
+}
+div.fadeIn {
+    display: flex;
+}
+
+.options {
+    margin: 20px auto;
+}
+.options img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
